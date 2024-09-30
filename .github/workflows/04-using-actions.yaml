@@ -5,7 +5,16 @@ on: push
 jobs: 
     build:
         runs-on: ubuntu-latest
+        steps: 
+            - name: Checkout code
+              uses: actions/checkout@v4
+            - name: Priniting folders
+              run: ls
+
+
+
+
 
         # 1. install react app
         # 2. execute automated tests
-        
+
