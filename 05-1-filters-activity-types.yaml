@@ -2,6 +2,13 @@ name: 05 - 1- filters activity types
 
 on:
   pull_request:
+    types: 
+        - opened
+        - synchronize
+    branches: 
+        - main
+        
+
 jobs:
   echo:
     runs-on: ubuntu-latest
